@@ -3,13 +3,26 @@ import 'data.dart';
 class Database {
   int _nextquestion = 0;
   List<Data> _quesbank = [
-    Data('The first Indian movie nominated for Oscar was Lagaan', false),
-    Data('"Abhi to party shuru huyi hai" is song of movie Khoobsurat.', true),
-    Data('Shahrukh khan played a role of a villain in Baazigar movie.', true),
-    Data('Accidental primeminister movies is biopic of Narendra Modi.', false),
-    Data('Ramgopal Verma is the director of "Kasoor".', false),
-    Data(' Shraddha was lead actoress of "Bhaghi 2"', false),
-    Data('S. S. Rajamouli is director of "bahubali 2".', true),
+    Data('Electrons are larger than molecules.', false),
+    Data('The Atlantic Ocean is the biggest ocean on Earth.', false),
+    Data('The chemical make up food often changes when you cook it.', true),
+    Data(' Sharks are mammals.', false),
+    Data('Floatation separates mixtures based on density', true),
+    Data(' Atoms are most stable when their outer shells are full.', true),
+    Data('Filtration separates mixtures based upon their particle size.', true),
+    Data(' Venus is the closest planet to the Sun.', false),
+    Data(' Conductors have low resistance.', true),
+    Data(' Molecules can have atoms from more than one chemical element.', true),
+    Data(' Water is an example of a chemical element.', false),
+    Data(' The study of plants is known as botany.', true),
+    Data(' Mount Kilimanjaro is the tallest mountain in the world.', false),
+    Data(' Atomic bombs work by atomic fission.', true),
+    Data(' Molecules are chemically bonded.', true),
+    Data(' Spiders have six legs.', false),
+    Data(' Kelvin is a measure of temperature.', true),
+    Data(' The human skeleton is made up of less than 100 bones.', false),
+
+
   ];
   String getQuestion() {
     return _quesbank[_nextquestion].ques;

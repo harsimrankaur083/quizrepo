@@ -31,7 +31,7 @@ class _MyappState extends State<MyApp2> {
             isOverlayTapDismiss: false,
           ),
           context: context,
-          title: "Bollywood Quiz",
+          title: "Science Quiz",
           desc: ' $totalRight/${mydatabase.totalQuestion()} You Tried Well',
           buttons: [
             DialogButton(
@@ -73,15 +73,17 @@ class _MyappState extends State<MyApp2> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(116, 116, 191, 1.0),
       appBar: AppBar(
-        title: Text('Bollywood Quiz'),
+        title: Text('Science Quiz'),
         backgroundColor: Color(0xFF083663),
       ),
       body: Container(
         decoration: BoxDecoration(
-            gradient: LinearGradient(colors: [
-          Color.fromRGBO(116, 116, 191, 1.0),
-          Color.fromRGBO(52, 138, 199, 1.0),
-        ])),
+
+          image: DecorationImage(
+            image: AssetImage("images/imagesbg2.jpg"),
+            fit:BoxFit.cover,
+          ),
+        ),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(20.0, 50.0, 20.0, 40.0),
           child: Column(
@@ -91,7 +93,7 @@ class _MyappState extends State<MyApp2> {
              CircleAvatar(
                 radius: 50.0,
                 backgroundColor: Colors.green,
-                child: Text('$totalDone/${mydatabase.totalQuestion()}',style: TextStyle(fontWeight:FontWeight.bold,fontSize: 30.0),),
+                child: Text('$totalRight/${mydatabase.totalQuestion()}',style: TextStyle(fontWeight:FontWeight.bold,fontSize: 30.0),),
               ),
               SizedBox(
                 height: 70.0,

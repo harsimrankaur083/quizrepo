@@ -13,12 +13,12 @@ class _MyApp1State extends State<MyApp1> {
       return new SplashScreen(
       seconds: 8,
       navigateAfterSeconds: new AfterSplash(),
-      title: new Text('Bollywood quiz',
+      title: new Text('Science quiz',
       style: new TextStyle(
         fontWeight: FontWeight.bold,
         fontSize: 20.0
       ),),
-      image: new Image.network("https://img.icons8.com/color/72/bebo.png"),
+      image: new Image.network("icon.png"),
       backgroundColor: Colors.white,
       styleTextUnderTheLoader: new TextStyle(),
       photoSize: 100.0,
@@ -38,7 +38,7 @@ class _AfterSplashState extends State<AfterSplash> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bollywood Quiz'),
+        title: Text('Science Quiz'),
          backgroundColor: Color(0xFF083663),
       ),
       body:
@@ -46,7 +46,7 @@ class _AfterSplashState extends State<AfterSplash> {
         decoration: BoxDecoration(
           
           image: DecorationImage(
-            image: AssetImage("images/bollywood.jpg"),
+            image: AssetImage("images/quizback.jpg"),
             fit:BoxFit.cover,
         ),
       ),
