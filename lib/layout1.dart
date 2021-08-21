@@ -18,10 +18,10 @@ class _MyApp1State extends State<MyApp1> {
         fontWeight: FontWeight.bold,
         fontSize: 20.0
       ),),
-      image: new Image.network("icon.png"),
+      image: new Image.asset("images/icon.png"),
       backgroundColor: Colors.white,
       styleTextUnderTheLoader: new TextStyle(),
-      photoSize: 100.0,
+      photoSize: 50.0,
       onClick: ()=>print("Flutter Egypt"),
       loaderColor: Colors.red
     );
